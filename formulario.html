@@ -1,0 +1,48 @@
+<!doctype html>
+
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<h2>Login</h2>
+	<form> <!-- tag para criação de formulário-->
+		Login:<br>
+		<input type="tex" name="login"> <!-- type define o tipo de dado de entrada; name é um gatilho de recuperação de dados usando uma linguagem de programação, é usado para passar os dados inseridos para uma outra página--><br>
+		Senha:<br>
+		<input type="password" name="senha"> <!-- Password é um tipo de dado próprio para senhas; ele esconde a senha e exibe apenas asteriscos--><br>
+		<br>
+		<input type="button" value="logar"> <!-- value define o texto exibido no botão-->
+	</form>
+
+	<h2>Cadastre-se</h2>
+
+	<form>
+
+		Login:<br>
+		<input type="text" name="login"><br><br>
+
+		Sexo:<br>
+		<input type="radio" name="sexo" value="M"> Masculino<br><!-- radio insere um ponto para seleção de opção-->
+		<input type="radio" name="sexo" value="F"> Feminino<br><br><!-- é necessário definir os names das opções com o mesmo nome (sexo), assim quando selecionar uma das opções, a outra é desmarcada. Value envia o valor da opção escolhida.-->
+		Interesses:<br>
+		<input type="checkbox" name="interesses"> Futebol<br>
+		<input type="checkbox" name="interesses"> Cursos<br>
+		<input type="checkbox" name="interesses"> Moda<br><br>	
+
+		Estado<br>
+		<select name="estado">
+			<option value="sp">SP</option>
+			<option value="mg">MG</option>
+			<option value="rj">RJ</option>
+			<option value="rs">RS</option>
+		</select><br><br>
+
+		Observações:<br>
+		<textarea></textarea><br><br> <!--define uma caixa de texto expansível-->
+
+		<input type="submit" value="cadastrar">
+
+	</form>
+</body>
